@@ -76,9 +76,27 @@ export function usePhotoGallery() {
           };
         }
       };
+
+      // Função para deletar uma foto
+      const deletePhoto = async (filepath: string) => {
+        // Remove o arquivo do sistema de arquivos
+        await Filesystem.deleteFile({
+          path: filepath,
+          directory: Directory.Data,
+        });
+
+      // Atualiza a lista de fotos
+        const updatedPhotos = photos.filter(p => p.filepath !== filepath);
+        setPhotos(updatedPhotos);
+
+        // Atualiza o armazenamento
+        Preferences.set({ key: PHOTO_STORAGE, value: JSON.stringify(updatedPhotos) });
+    };
+
     return {
         photos,
         takePhoto,
+        deletePhoto, // Retorna a função deletePhoto
     };
 }
 

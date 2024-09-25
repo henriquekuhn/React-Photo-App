@@ -3,14 +3,20 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
+  top: 15%;
   transform: translateY(-50%);
 }
 
 .container strong {
-  font-size: 20px;
+  font-size: 24px;
   line-height: 26px;
 }
+
+.small {
+  font-size: 16px; /* Ajuste para o tamanho desejado */
+  line-height: 16px; /* Ajuste para o espaçamento desejado */
+}
+
 
 .container p {
   font-size: 16px;
@@ -21,4 +27,9 @@
 
 .container a {
   text-decoration: none;
+}
+
+.container_page {
+  margin-top: 0;  /* Remove a margem superior */
+  padding-top: 0; /* Remove o padding superior */
 }
