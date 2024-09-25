@@ -1,6 +1,6 @@
 # React-Photo-App
 
-##Web
+## Web
 To run your project in you computer, run in terminal:
 
 ```
