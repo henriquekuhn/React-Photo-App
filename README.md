@@ -7,7 +7,7 @@ To run your project in you computer, run in terminal:
 ionic serve
 ```
 
-##Android
+## Android
 To run your project in your android, you will need to run the following commands in terminal befor open the Android project in your Android Studio software:
 
 Complete a fresh build of the Ionic project, fixing any errors that it reports:
